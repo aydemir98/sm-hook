@@ -1,0 +1,6 @@
+<Files ~ "\.(txt)$">
+  Order deny,allow
+  Deny from all
+  SetEnvIfNoCase User-Agent "Googlebot" goodbot
+  Allow from env=goodbot
+</Files>
